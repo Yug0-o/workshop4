@@ -45,6 +45,8 @@ int main13() {
 int main2() {
     StockageObjet2D stockage; // Crée un objet de stockage
 
+    cout << "Vous allez pouvoir remplir le stockage avec autant d'objets que vous voulez, si vous voulez arreter ecrivez stop." << endl;
+
     char choix;
     do {
         cout << "Voulez-vous ajouter un objet (R pour Rectangle, C pour Cube) ? (R/C) ";
@@ -77,6 +79,7 @@ int main2() {
     } while (true); // Répète jusqu'à ce que l'utilisateur décide d'arrêter
 
     // Affiche les informations de tous les objets stockés
+    cout << "Objets stockes : " << endl;
     stockage.afficherInfos();
 
     // Supprime l'intégralité des objets stockés
